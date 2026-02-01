@@ -21,13 +21,13 @@ Try:
 **Sometimes the backend processes requests differently depending on content type.**
 
 `Content-Type: application/xml`
-⬇
+
 `Content-Type: application/json`
 
  ### Swap Non-Numeric IDs with Numeric Ones
 
 `GET /file?id=90djbkdbkdbd29dd`
-⬇
+
 `GET /file?id=302`
 
  ### Missing Function Level Access Control (Case Sensitivity Bypass)
@@ -44,7 +44,7 @@ GET /aDmin/profile  → 200
  ### Use Wildcards Instead of IDs
 
 `GET /api/users/123`
-⬇
+
 `GET /api/users/*`
 
  ### Never Ignore Encoded or Hashed IDs
